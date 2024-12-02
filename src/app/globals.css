@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 0, 0, 0;
+    background-color: hsl(var(--background));
+  }
+
+  .dark {
+    --background: 0 0% 0%;
+    --foreground: 255, 255, 255;
+  }
+
+  html {
+    background-color: hsl(var(--background));
+    overflow-x: hidden;
+  }
+}
+
+body {
+  color: rgb(var(--foreground));
+  background-color: hsl(var(--background));
+  min-height: 100vh;
+}
+
